@@ -108,7 +108,12 @@ http://localhost/Online-Fashion-Store
 - Institution: MIT Art, Design and Technology University, Pune
 
 ![img4](https://github.com/user-attachments/assets/450e7a01-ef88-4cec-beec-81c8e58710f2)
-
+![img1](https://github.com/user-attachments/assets/513c7fa0-6af0-4ee5-8017-3378db0f3de7)
+![img2](https://github.com/user-attachments/assets/20ee9534-11d7-4e63-8ad0-803275fa2788)
+![Screenshot 2025-04-16 003225](https://github.com/user-attachments/assets/c82e0177-d94e-4041-a3fe-7617158805b5)
+![Screenshot 2025-04-16 003245](https://github.com/user-attachments/assets/3be7f690-5eec-4217-9bbe-84b596a7dba6)
+![Screenshot 2025-04-16 003257](https://github.com/user-attachments/assets/b9b010a4-428c-435a-b16a-7e29c85d5a65)
+![Screenshot 2025-04-16 003315](https://github.com/user-attachments/assets/de4739ea-a6ff-4968-a093-c324ff00ad88)
 
 ## 📄 License
 
