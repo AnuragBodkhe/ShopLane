@@ -50,7 +50,7 @@ A modern, responsive e-commerce website for fashion products built with PHP, HTM
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/Online-Fashion-Store.git
+https://github.com/AnuragBodkhe/ShopLane.git
 ```
 
 2. Move the project to your web server directory (e.g., htdocs for XAMPP):
@@ -68,8 +68,8 @@ http://localhost/Online-Fashion-Store
 ## 🔧 Configuration
 
 1. Default test account:
-   - Email: test@example.com
-   - Password: password123
+   - Email: 123
+   - Password: 123
 
 2. To modify product data:
    - Update the products in the content.js file
@@ -119,7 +119,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 This project was developed as part of the academic curriculum at MIT Art, Design and Technology University, demonstrating practical implementation of web development concepts and e-commerce solutions.
 
-## 📞 Contact
+## 📞 Contact 9022977272 
 
 For any queries regarding this project, please contact:
 - **Location:** MIT Art, Design and Technology University
