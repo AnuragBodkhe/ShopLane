@@ -101,15 +101,14 @@ http://localhost/Online-Fashion-Store
 - Wishlist
 - Address management
 
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
 ## 📝 Developer
 
 **Anurag Bodkhe**
 - LinkedIn: [Anurag Bodkhe](https://www.linkedin.com/in/anurag-bodkhe-087758292)
 - Institution: MIT Art, Design and Technology University, Pune
+
+![img4](https://github.com/user-attachments/assets/450e7a01-ef88-4cec-beec-81c8e58710f2)
+
 
 ## 📄 License
 
