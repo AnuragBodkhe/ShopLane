@@ -107,13 +107,13 @@ http://localhost/Online-Fashion-Store
 - LinkedIn: [Anurag Bodkhe](https://www.linkedin.com/in/anurag-bodkhe-087758292)
 - Institution: MIT Art, Design and Technology University, Pune
 
-![img4](https://github.com/user-attachments/assets/450e7a01-ef88-4cec-beec-81c8e58710f2)
-![img1](https://github.com/user-attachments/assets/513c7fa0-6af0-4ee5-8017-3378db0f3de7)
-![img2](https://github.com/user-attachments/assets/20ee9534-11d7-4e63-8ad0-803275fa2788)
-![Screenshot 2025-04-16 003225](https://github.com/user-attachments/assets/c82e0177-d94e-4041-a3fe-7617158805b5)
-![Screenshot 2025-04-16 003245](https://github.com/user-attachments/assets/3be7f690-5eec-4217-9bbe-84b596a7dba6)
-![Screenshot 2025-04-16 003257](https://github.com/user-attachments/assets/b9b010a4-428c-435a-b16a-7e29c85d5a65)
-![Screenshot 2025-04-16 003315](https://github.com/user-attachments/assets/de4739ea-a6ff-4968-a093-c324ff00ad88)
+## 📸 Screenshots
+
+![Screenshot 2025-05-18 171606](img/Screenshot%202025-05-18%20171606.png)
+![Screenshot 2025-05-18 171616](img/Screenshot%202025-05-18%20171616.png)
+![Screenshot 2025-05-18 171628](img/Screenshot%202025-05-18%20171628.png)
+![Screenshot 2025-05-18 174604](img/Screenshot%202025-05-18%20174604.png)
+![Screenshot 2025-05-18 175313](img/Screenshot%202025-05-18%20175313.png)
 
 ## 📄 License
 
