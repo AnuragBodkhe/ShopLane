@@ -5,6 +5,39 @@
 
 console.clear();
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+// Using utility functions from utils.js
+// These functions are defined in utils.js:
+// - getCartItems()
+// - updateCartBadge()
+// - formatCurrency()
+// - showToast()
+
+
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 // Function to update cart in localStorage
 function updateCart(items) {
     try {
@@ -32,12 +65,121 @@ function updateCart(items) {
     } catch (error) {
         console.error('Error updating cart:', error);
         showToast('There was an error updating your cart', 'error');
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+// Function to get cart items from localStorage
+function getCartItems() {
+    try {
+        const cartData = localStorage.getItem('cart');
+        console.log('Raw cart data from localStorage:', cartData);
+        if (cartData) {
+            const cartItems = JSON.parse(cartData);
+            console.log('Parsed cart items:', cartItems);
+            return cartItems;
+        }
+    } catch (error) {
+        console.error('Error getting cart items:', error);
+    }
+    console.log('No cart items found, returning empty array');
+    return [];
+}
+
+// Update cart badge count
+function updateCartBadge() {
+    try {
+        const cart = getCartItems();
+        let count = 0;
+        cart.forEach(item => {
+            count += item.quantity || 1;
+        });
+        const badge = document.getElementById("badge");
+        if (badge) {
+            badge.textContent = count;
+        }
+    } catch (error) {
+        console.error('Error updating cart badge:', error);
+    }
+}
+
+// Function to update cart in localStorage
+function updateCart(items) {
+    try {
+        // Save to localStorage
+        localStorage.setItem('cart', JSON.stringify(items));
+        
+        // Update badge
+        updateCartBadge();
+        
+        // Update total items count
+        const totalItem = document.getElementById("totalItem");
+        if (totalItem) {
+            let totalQuantity = 0;
+            items.forEach(item => {
+                totalQuantity += item.quantity || 1;
+            });
+            totalItem.textContent = `Total Items: ${totalQuantity}`;
+        }
+    } catch (error) {
+        console.error('Error updating cart:', error);
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     }
 }
 
 // Function to remove item from cart
 function removeFromCart(itemId) {
     let items = getCartItems();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+    items = items.filter(item => item.id !== itemId);
+    updateCart(items);
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     
     // Find the item to be removed for the notification
     const removedItem = items.find(item => item.id === itemId);
@@ -81,6 +223,28 @@ function removeFromCart(itemId) {
     } else {
         // If the DOM element wasn't found, still update totals
         updateTotalAmount();
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     }
 }
 
@@ -180,12 +344,61 @@ function updateTotalAmount() {
         setTimeout(() => {
             element.classList.remove('updating');
         }, 600);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     }
     
     if (subtotalElement) {
         animateValueChange(subtotalElement, formatCurrency(totalAmount));
     }
     
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+=======
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+    }
+<<<<<<< HEAD
+=======
+    
+    if (subtotalElement) {
+        animateValueChange(subtotalElement, formatCurrency(totalAmount));
+    }
+    
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     if (shippingElement) {
         const shippingCost = totalAmount > 999 ? 'FREE' : formatCurrency(99);
         animateValueChange(shippingElement, shippingCost);
@@ -221,6 +434,28 @@ function renderCartItems(cartItems) {
     cartContainer.innerHTML = '';
     
     // If cart is empty, show empty cart message
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     if (!cartItems || cartItems.length === 0) {
         const emptyCartMessage = document.createElement('div');
         emptyCartMessage.className = 'empty-cart';
@@ -362,6 +597,32 @@ function renderCartItems(cartItems) {
         
         if (!cartItems || cartItems.length === 0) {
             // Show empty cart message
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    if (items.length === 0) {
+        const cartContainer = document.getElementById('cartContainer');
+        if (cartContainer) {
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
             cartContainer.innerHTML = `
                 <div class="empty-cart">
                     <i class="fas fa-shopping-cart"></i>
@@ -370,12 +631,218 @@ function renderCartItems(cartItems) {
                     <a href="index.html" class="continue-shopping">Continue Shopping</a>
                 </div>
             `;
+<<<<<<< HEAD
         } else {
             // Render cart items
             renderCartItems(cartItems);
+=======
+<<<<<<< HEAD
+        } else {
+            // Render cart items
+            renderCartItems(cartItems);
+=======
+<<<<<<< HEAD
+        } else {
+            // Render cart items
+            renderCartItems(cartItems);
+=======
+<<<<<<< HEAD
+        } else {
+            // Render cart items
+            renderCartItems(cartItems);
+=======
+<<<<<<< HEAD
+        } else {
+            // Render cart items
+            renderCartItems(cartItems);
+=======
+<<<<<<< HEAD
+        } else {
+            // Render cart items
+            renderCartItems(cartItems);
+=======
+<<<<<<< HEAD
+        } else {
+            // Render cart items
+            renderCartItems(cartItems);
+=======
+<<<<<<< HEAD
+        } else {
+            // Render cart items
+            renderCartItems(cartItems);
+=======
         }
     }
     
+    // Update the total amount
+    updateTotalAmount();
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+}
+
+// Function to update item quantity
+function updateQuantity(productId, change) {
+    console.log(`Updating quantity for product ${productId} by ${change}`);
+    let items = getCartItems();
+    const itemIndex = items.findIndex(item => item.id === productId);
+    
+    if (itemIndex >= 0) {
+<<<<<<< HEAD
+        const item = items[itemIndex];
+        const currentQty = item.quantity || 1;
+        
+        if (change === 0) {
+            // Remove item completely - use the removeFromCart function for consistency
+            removeFromCart(productId);
+            return;
+        } else {
+            // Update quantity
+            const newQty = currentQty + change;
+            
+            if (newQty <= 0) {
+                // Remove item if quantity would be 0 or less
+                removeFromCart(productId);
+                return;
+            } else {
+                // Update quantity
+                item.quantity = newQty;
+                
+                // Show appropriate message
+                if (change > 0) {
+                    showToast(`Increased ${item.name} quantity to ${newQty}`, 'success');
+                } else {
+                    showToast(`Decreased ${item.name} quantity to ${newQty}`, 'info');
+                }
+=======
+        if (change === 0) {
+            // Remove item completely
+            items.splice(itemIndex, 1);
+        } else {
+            // Update quantity
+            const newQty = (items[itemIndex].quantity || 1) + change;
+            
+            if (newQty <= 0) {
+                // Remove item if quantity would be 0 or less
+                items.splice(itemIndex, 1);
+            } else {
+                // Update quantity
+                items[itemIndex].quantity = newQty;
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+            }
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
+        }
+        
+        updateCart(items);
+        
+<<<<<<< HEAD
+        // Update the displayed quantity and total with animation
+        const quantityElement = document.querySelector(`[data-item-id="${productId}"] .quantity`);
+        if (quantityElement) {
+            // Add pulse animation
+            quantityElement.classList.add('pulse');
+            quantityElement.textContent = item.quantity;
+            
+            // Remove animation after it completes
+            setTimeout(() => {
+                quantityElement.classList.remove('pulse');
+            }, 500);
+            
+            // Update the item total with animation
+            const priceElement = document.querySelector(`[data-item-id="${productId}"] .item-total`);
+            if (priceElement) {
+                priceElement.classList.add('flash');
+                priceElement.textContent = `Total: ${formatCurrency(item.price * item.quantity)}`;
+                
+                setTimeout(() => {
+                    priceElement.classList.remove('flash');
+                }, 500);
+=======
+        // Update the displayed quantity and total
+        const quantityElement = document.querySelector(`[data-item-id="${productId}"] .quantity`);
+        if (quantityElement && itemIndex >= 0 && items[itemIndex]) {
+            quantityElement.textContent = items[itemIndex].quantity;
+            
+            // Update the item total
+            const priceElement = document.querySelector(`[data-item-id="${productId}"] .item-total`);
+            if (priceElement) {
+                priceElement.textContent = `Total: ₹${items[itemIndex].price * items[itemIndex].quantity}`;
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+            }
+            
+            // Update the overall total
+            updateTotalAmount();
+<<<<<<< HEAD
+        }
+    } else {
+        console.error(`Product with ID ${productId} not found in cart`);
+        showToast('Error updating quantity', 'error');
+=======
+        } else {
+            // If the item was removed, refresh the page
+            location.reload();
+        }
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+    }
+}
+
+// Function to calculate and update the total amount
+function updateTotalAmount() {
+    const items = getCartItems();
+    let totalAmount = 0;
+    
+    items.forEach(item => {
+        totalAmount += item.price * (item.quantity || 1);
+    });
+    
+    const subtotalElement = document.querySelector('.summary-item .subtotal-value');
+    const shippingElement = document.querySelector('.summary-item .shipping-value');
+    const totalElement = document.querySelector('.summary-item.total .total-value');
+    
+<<<<<<< HEAD
+    // Helper function to animate value changes
+    function animateValueChange(element, newValue) {
+        if (!element) return;
+        
+        // Add animation class
+        element.classList.add('updating');
+        
+        // Update the value
+        element.textContent = newValue;
+        
+        // Remove animation class after animation completes
+        setTimeout(() => {
+            element.classList.remove('updating');
+        }, 600);
+    }
+    
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     // Update cart badge
     try {
         updateCartBadge();
@@ -409,6 +876,25 @@ function renderCartItems(cartItems) {
                     <h2>Something went wrong</h2>
                     <p>We couldn't load your cart. Please try refreshing the page.</p>
                     <a href="index.html" class="continue-shopping">Continue Shopping</a>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
                 </div>
             `;
         }
@@ -507,6 +993,7 @@ function renderCartItems(cartItems) {
                 <span class="total-value">₹${totalAmount > 999 ? totalAmount : totalAmount + 99}</span>
             </div>
             <button id="checkout-btn">Proceed to Checkout</button>
+<<<<<<< HEAD
         `;
         
         // Add cart sections to page
@@ -515,11 +1002,376 @@ function renderCartItems(cartItems) {
         cartWrapper.appendChild(cartSummary);
         cartContainer.appendChild(cartWrapper);
         
+=======
+<<<<<<< HEAD
+        `;
+        
+        // Add cart sections to page
+        cartContainer.innerHTML = '';
+        cartWrapper.appendChild(cartContent);
+        cartWrapper.appendChild(cartSummary);
+        cartContainer.appendChild(cartWrapper);
+        
+=======
+<<<<<<< HEAD
+        `;
+        
+        // Add cart sections to page
+        cartContainer.innerHTML = '';
+        cartWrapper.appendChild(cartContent);
+        cartWrapper.appendChild(cartSummary);
+        cartContainer.appendChild(cartWrapper);
+        
+=======
+<<<<<<< HEAD
+        `;
+        
+        // Add cart sections to page
+        cartContainer.innerHTML = '';
+        cartWrapper.appendChild(cartContent);
+        cartWrapper.appendChild(cartSummary);
+        cartContainer.appendChild(cartWrapper);
+        
+=======
+<<<<<<< HEAD
+        `;
+        
+        // Add cart sections to page
+        cartContainer.innerHTML = '';
+        cartWrapper.appendChild(cartContent);
+        cartWrapper.appendChild(cartSummary);
+        cartContainer.appendChild(cartWrapper);
+        
+=======
+<<<<<<< HEAD
+        `;
+        
+        // Add cart sections to page
+        cartContainer.innerHTML = '';
+        cartWrapper.appendChild(cartContent);
+        cartWrapper.appendChild(cartSummary);
+        cartContainer.appendChild(cartWrapper);
+        
+=======
+        `;
+        
+        // Add cart sections to page
+        cartContainer.innerHTML = '';
+        cartWrapper.appendChild(cartContent);
+        cartWrapper.appendChild(cartSummary);
+        cartContainer.appendChild(cartWrapper);
+        
+=======
+                </div>
+            `;
+        }
+    }
+});
+=======
+    if (subtotalElement) {
+        animateValueChange(subtotalElement, formatCurrency(totalAmount));
+    }
+    
+    if (shippingElement) {
+        const shippingCost = totalAmount > 999 ? 'FREE' : formatCurrency(99);
+        animateValueChange(shippingElement, shippingCost);
+    }
+    
+    if (totalElement) {
+        const finalTotal = totalAmount > 999 ? totalAmount : totalAmount + 99;
+        animateValueChange(totalElement, formatCurrency(finalTotal));
+    }
+    
+    // Update checkout button state
+    const checkoutBtn = document.getElementById('checkout-btn');
+    if (checkoutBtn) {
+        if (items.length === 0) {
+            checkoutBtn.disabled = true;
+            checkoutBtn.classList.add('disabled');
+        } else {
+            checkoutBtn.disabled = false;
+            checkoutBtn.classList.remove('disabled');
+        }
+=======
+    if (subtotalElement) {
+        subtotalElement.textContent = `₹${totalAmount}`;
+    }
+    
+    if (shippingElement) {
+        shippingElement.textContent = totalAmount > 999 ? 'FREE' : '₹99';
+    }
+    
+    if (totalElement) {
+        totalElement.textContent = `₹${totalAmount > 999 ? totalAmount : totalAmount + 99}`;
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+    }
+}
+
+// Initialize cart on page load
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('Cart initialization started');
+    
+    // Get cart items from localStorage
+    const cartItems = getCartItems();
+    console.log('Cart items from localStorage:', cartItems);
+    
+    // Get cart container
+    const cartContainer = document.getElementById('cartContainer');
+    if (!cartContainer) {
+        console.error('Cart container not found');
+        return;
+    }
+    
+    // Update total items count
+    const totalItem = document.getElementById("totalItem");
+    if (totalItem) {
+        // Calculate total quantity of items
+        let totalQuantity = 0;
+        cartItems.forEach(item => {
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+            totalQuantity += item.quantity || 1;
+        });
+        totalItem.textContent = `Total Items: ${totalQuantity}`;
+    }
+    
+    // If cart is empty
+    if (!cartItems || cartItems.length === 0) {
+        const emptyCartMessage = document.createElement('div');
+        emptyCartMessage.className = 'empty-cart';
+        emptyCartMessage.innerHTML = `
+            <i class="fas fa-shopping-cart"></i>
+            <h2>Your Cart is Empty</h2>
+            <p>Looks like you haven't added anything to your cart yet.</p>
+            <a href="index.html" class="continue-shopping">Continue Shopping</a>
+<<<<<<< HEAD
+        `;
+        
+        cartContainer.innerHTML = '';
+        cartContainer.appendChild(emptyCartMessage);
+    } else {
+        console.log('Rendering cart with items:', cartItems);
+        
+        // Create cart wrapper
+        const cartWrapper = document.createElement('div');
+        cartWrapper.className = 'cart-wrapper';
+        
+        // Create cart content
+        const cartContent = document.createElement('div');
+        cartContent.className = 'cart-content';
+        
+        // Create cart summary
+        const cartSummary = document.createElement('div');
+        cartSummary.className = 'cart-summary';
+        
+        let totalAmount = 0;
+        
+        // Add each cart item to the cart content
+        cartItems.forEach(item => {
+            console.log('Rendering cart item:', item);
+            const cartItemElement = document.createElement('div');
+            cartItemElement.className = 'cart-item';
+            cartItemElement.setAttribute('data-item-id', item.id);
+            
+            const quantity = item.quantity || 1;
+            const itemTotal = item.price * quantity;
+            totalAmount += itemTotal;
+            
+            cartItemElement.innerHTML = `
+                <div class="item-image">
+                    <img src="${item.image}" alt="${item.name}">
+                </div>
+                <div class="item-details">
+                    <h3>${item.name}</h3>
+                    <div class="item-info">
+                        <div class="quantity-controls">
+                            <button class="qty-btn minus" onclick="updateQuantity('${item.id}', -1)">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="quantity">${quantity}</span>
+                            <button class="qty-btn plus" onclick="updateQuantity('${item.id}', 1)">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <p class="price">Price: ₹${item.price}</p>
+                        <p class="price item-total">Total: ₹${itemTotal}</p>
+                    </div>
+                    <button class="remove-btn" onclick="removeFromCart('${item.id}')">
+                        <i class="fas fa-trash"></i>
+                        <span>Remove</span>
+                    </button>
+                </div>
+            `;
+            
+            cartContent.appendChild(cartItemElement);
+        });
+        
+        console.log('Total amount calculated:', totalAmount);
+        
+        // Set cart summary content
+        cartSummary.innerHTML = `
+            <h3>Order Summary</h3>
+            <div class="summary-item">
+                <span>Subtotal</span>
+                <span class="subtotal-value">₹${totalAmount}</span>
+            </div>
+            <div class="summary-item">
+                <span>Shipping</span>
+                <span class="shipping-value">${totalAmount > 999 ? 'FREE' : '₹99'}</span>
+            </div>
+            <div class="summary-item total">
+                <span>Total</span>
+                <span class="total-value">₹${totalAmount > 999 ? totalAmount : totalAmount + 99}</span>
+            </div>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        `;
+        
+        // Add cart sections to page
+        cartContainer.innerHTML = '';
+        cartWrapper.appendChild(cartContent);
+        cartWrapper.appendChild(cartSummary);
+        cartContainer.appendChild(cartWrapper);
+        
+=======
+        `;
+        
+        cartContainer.innerHTML = '';
+        cartContainer.appendChild(emptyCartMessage);
+    } else {
+        console.log('Rendering cart with items:', cartItems);
+        
+        // Create cart wrapper
+        const cartWrapper = document.createElement('div');
+        cartWrapper.className = 'cart-wrapper';
+        
+        // Create cart content
+        const cartContent = document.createElement('div');
+        cartContent.className = 'cart-content';
+        
+        // Create cart summary
+        const cartSummary = document.createElement('div');
+        cartSummary.className = 'cart-summary';
+        
+        let totalAmount = 0;
+        
+        // Add each cart item to the cart content
+        cartItems.forEach(item => {
+            console.log('Rendering cart item:', item);
+            const cartItemElement = document.createElement('div');
+            cartItemElement.className = 'cart-item';
+            cartItemElement.setAttribute('data-item-id', item.id);
+            
+            const quantity = item.quantity || 1;
+            const itemTotal = item.price * quantity;
+            totalAmount += itemTotal;
+            
+            cartItemElement.innerHTML = `
+                <div class="item-image">
+                    <img src="${item.image}" alt="${item.name}">
+                </div>
+                <div class="item-details">
+                    <h3>${item.name}</h3>
+                    <div class="item-info">
+                        <div class="quantity-controls">
+                            <button class="qty-btn minus" onclick="updateQuantity('${item.id}', -1)">
+                                <i class="fas fa-minus"></i>
+                            </button>
+                            <span class="quantity">${quantity}</span>
+                            <button class="qty-btn plus" onclick="updateQuantity('${item.id}', 1)">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <p class="price">Price: ₹${item.price}</p>
+                        <p class="price item-total">Total: ₹${itemTotal}</p>
+                    </div>
+                    <button class="remove-btn" onclick="removeFromCart('${item.id}')">
+                        <i class="fas fa-trash"></i>
+                        <span>Remove</span>
+                    </button>
+                </div>
+            `;
+            
+            cartContent.appendChild(cartItemElement);
+        });
+        
+        console.log('Total amount calculated:', totalAmount);
+        
+        // Set cart summary content
+        cartSummary.innerHTML = `
+            <h3>Order Summary</h3>
+            <div class="summary-item">
+                <span>Subtotal</span>
+                <span class="subtotal-value">₹${totalAmount}</span>
+            </div>
+            <div class="summary-item">
+                <span>Shipping</span>
+                <span class="shipping-value">${totalAmount > 999 ? 'FREE' : '₹99'}</span>
+            </div>
+            <div class="summary-item total">
+                <span>Total</span>
+                <span class="total-value">₹${totalAmount > 999 ? totalAmount : totalAmount + 99}</span>
+            </div>
+            <button id="checkout-btn">Proceed to Checkout</button>
+        `;
+        
+        // Add cart sections to page
+        cartContainer.innerHTML = '';
+        cartWrapper.appendChild(cartContent);
+        cartWrapper.appendChild(cartSummary);
+        cartContainer.appendChild(cartWrapper);
+        
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
         // Add event listener to checkout button
         const checkoutBtn = document.getElementById('checkout-btn');
         if (checkoutBtn) {
             checkoutBtn.addEventListener('click', function() {
+<<<<<<< HEAD
                 processCheckout(cartItems, totalAmount);
+=======
+<<<<<<< HEAD
+                processCheckout(cartItems, totalAmount);
+=======
+<<<<<<< HEAD
+                processCheckout(cartItems, totalAmount);
+=======
+<<<<<<< HEAD
+                processCheckout(cartItems, totalAmount);
+=======
+<<<<<<< HEAD
+                processCheckout(cartItems, totalAmount);
+=======
+<<<<<<< HEAD
+                processCheckout(cartItems, totalAmount);
+=======
+<<<<<<< HEAD
+                processCheckout(cartItems, totalAmount);
+=======
+<<<<<<< HEAD
+                processCheckout(cartItems, totalAmount);
+=======
+<<<<<<< HEAD
+                processCheckout(cartItems, totalAmount);
+=======
+<<<<<<< HEAD
+                processCheckout(cartItems, totalAmount);
+=======
+                alert('Thank you for your order! This is a demo, so no actual purchase will be made.');
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
             });
         }
     }
@@ -894,6 +1746,7 @@ styles.textContent = `
 `;
 
 document.head.appendChild(styles);
+<<<<<<< HEAD
 
 // Function to process checkout and place order
 function processCheckout(items, totalAmount) {
@@ -930,3 +1783,32 @@ function simulateSendEmail(email, orderDetails) {
     // In a real application, this would make an API call to your backend
     // which would then send an actual email to the customer
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f

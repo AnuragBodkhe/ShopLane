@@ -67,11 +67,7 @@ http://localhost/Online-Fashion-Store
 
 ## 🔧 Configuration
 
-1. Default test account:
-   - Email: 123
-   - Password: 123
-
-2. To modify product data:
+1. To modify product data:
    - Update the products in the content.js file
    - Images should be placed in the img/ directory
 

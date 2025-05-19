@@ -13,11 +13,86 @@
 
 .section-title {
     text-align: center;
+<<<<<<< HEAD
     margin-bottom: 30px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 30px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 30px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 30px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 30px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 30px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 30px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 30px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 30px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 30px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 30px;
+=======
+    margin-bottom: 40px;
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     color: #333;
     font-weight: 600;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 /* Profile Header - New horizontal layout */
 .profile-header {
     background-color: #fff;
@@ -31,13 +106,126 @@
     display: flex;
     align-items: center;
     gap: 30px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+.profile-container {
+    display: flex;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Profile Sidebar */
+.profile-sidebar {
+    width: 280px;
+    background-color: #f1f1f1;
+    padding: 30px 20px;
+    text-align: center;
+    border-right: 1px solid #e1e1e1;
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 }
 
 .profile-image {
     position: relative;
+<<<<<<< HEAD
     width: 120px;
     height: 120px;
     flex-shrink: 0;
+=======
+<<<<<<< HEAD
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+=======
+<<<<<<< HEAD
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+=======
+<<<<<<< HEAD
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+=======
+<<<<<<< HEAD
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+=======
+<<<<<<< HEAD
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+=======
+<<<<<<< HEAD
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+=======
+<<<<<<< HEAD
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+=======
+<<<<<<< HEAD
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+=======
+<<<<<<< HEAD
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+=======
+<<<<<<< HEAD
+    width: 120px;
+    height: 120px;
+    flex-shrink: 0;
+=======
+    width: 150px;
+    height: 150px;
+    margin: 0 auto 20px;
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 }
 
 .profile-image img {
@@ -54,30 +242,223 @@
     bottom: 5px;
     right: 5px;
     background-color: #fff;
+<<<<<<< HEAD
     width: 32px;
     height: 32px;
+=======
+<<<<<<< HEAD
+    width: 32px;
+    height: 32px;
+=======
+<<<<<<< HEAD
+    width: 32px;
+    height: 32px;
+=======
+<<<<<<< HEAD
+    width: 32px;
+    height: 32px;
+=======
+<<<<<<< HEAD
+    width: 32px;
+    height: 32px;
+=======
+<<<<<<< HEAD
+    width: 32px;
+    height: 32px;
+=======
+<<<<<<< HEAD
+    width: 32px;
+    height: 32px;
+=======
+<<<<<<< HEAD
+    width: 32px;
+    height: 32px;
+=======
+<<<<<<< HEAD
+    width: 32px;
+    height: 32px;
+=======
+<<<<<<< HEAD
+    width: 32px;
+    height: 32px;
+=======
+<<<<<<< HEAD
+    width: 32px;
+    height: 32px;
+=======
+    width: 36px;
+    height: 36px;
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     cursor: pointer;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     transition: all 0.3s ease;
 }
 
 .edit-profile-image:hover {
     background-color: #f1f1f1;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 }
 
 .edit-profile-image i {
     color: #333;
+<<<<<<< HEAD
     font-size: 14px;
+=======
+<<<<<<< HEAD
+    font-size: 14px;
+=======
+<<<<<<< HEAD
+    font-size: 14px;
+=======
+<<<<<<< HEAD
+    font-size: 14px;
+=======
+<<<<<<< HEAD
+    font-size: 14px;
+=======
+<<<<<<< HEAD
+    font-size: 14px;
+=======
+<<<<<<< HEAD
+    font-size: 14px;
+=======
+<<<<<<< HEAD
+    font-size: 14px;
+=======
+<<<<<<< HEAD
+    font-size: 14px;
+=======
+<<<<<<< HEAD
+    font-size: 14px;
+=======
+<<<<<<< HEAD
+    font-size: 14px;
+=======
+    font-size: 16px;
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 }
 
 #profile-image-upload {
     display: none;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 .profile-details {
     flex: 1;
 }
@@ -85,11 +466,77 @@
 #profile-name {
     margin: 0 0 5px;
     font-size: 24px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+#profile-name {
+    margin: 0 0 5px;
+    font-size: 20px;
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     font-weight: 600;
     color: #333;
 }
 
 #profile-email {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     margin: 0 0 5px;
     color: #666;
     font-size: 16px;
@@ -121,22 +568,172 @@
     background-color: #f9f9f9;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    margin: 0 0 25px;
+    color: #666;
+    font-size: 14px;
+}
+
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 .profile-menu ul {
     list-style: none;
     padding: 0;
     margin: 0;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     display: flex;
     flex-wrap: wrap;
 }
 
 .profile-menu li {
     padding: 15px 25px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    text-align: left;
+}
+
+.profile-menu li {
+    padding: 12px 15px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     cursor: pointer;
     transition: all 0.3s ease;
     font-weight: 500;
     display: flex;
     align-items: center;
+<<<<<<< HEAD
     border-bottom: 3px solid transparent;
+=======
+<<<<<<< HEAD
+    border-bottom: 3px solid transparent;
+=======
+<<<<<<< HEAD
+    border-bottom: 3px solid transparent;
+=======
+<<<<<<< HEAD
+    border-bottom: 3px solid transparent;
+=======
+<<<<<<< HEAD
+    border-bottom: 3px solid transparent;
+=======
+<<<<<<< HEAD
+    border-bottom: 3px solid transparent;
+=======
+<<<<<<< HEAD
+    border-bottom: 3px solid transparent;
+=======
+<<<<<<< HEAD
+    border-bottom: 3px solid transparent;
+=======
+<<<<<<< HEAD
+    border-bottom: 3px solid transparent;
+=======
+<<<<<<< HEAD
+    border-bottom: 3px solid transparent;
+=======
+<<<<<<< HEAD
+    border-bottom: 3px solid transparent;
+=======
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 }
 
 .profile-menu li i {
@@ -146,6 +743,37 @@
 }
 
 .profile-menu li:hover {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     background-color: rgba(0, 0, 0, 0.03);
     border-bottom: 3px solid #ddd;
 }
@@ -154,6 +782,44 @@
     color: #007bff;
     border-bottom: 3px solid #007bff;
     background-color: rgba(0, 123, 255, 0.05);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.profile-menu li.active {
+    background-color: #007bff;
+    color: #fff;
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 }
 
 /* Profile Content */
@@ -410,7 +1076,50 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+<<<<<<< HEAD
     margin-bottom: 20px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 20px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 20px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 20px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 20px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 20px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 20px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 20px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 20px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 20px;
+=======
+<<<<<<< HEAD
+    margin-bottom: 20px;
+=======
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 }
 
 .address-item {
@@ -418,6 +1127,37 @@
     border-radius: 5px;
     padding: 20px;
     position: relative;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     background-color: #fff;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
@@ -425,6 +1165,38 @@
 
 .address-item:hover {
     box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 }
 
 .address-header {
@@ -436,8 +1208,61 @@
 .address-header h4 {
     margin: 0;
     font-size: 18px;
+<<<<<<< HEAD
     font-weight: 600;
     color: #333;
+=======
+<<<<<<< HEAD
+    font-weight: 600;
+    color: #333;
+=======
+<<<<<<< HEAD
+    font-weight: 600;
+    color: #333;
+=======
+<<<<<<< HEAD
+    font-weight: 600;
+    color: #333;
+=======
+<<<<<<< HEAD
+    font-weight: 600;
+    color: #333;
+=======
+<<<<<<< HEAD
+    font-weight: 600;
+    color: #333;
+=======
+<<<<<<< HEAD
+    font-weight: 600;
+    color: #333;
+=======
+<<<<<<< HEAD
+    font-weight: 600;
+    color: #333;
+=======
+<<<<<<< HEAD
+    font-weight: 600;
+    color: #333;
+=======
+<<<<<<< HEAD
+    font-weight: 600;
+    color: #333;
+=======
+<<<<<<< HEAD
+    font-weight: 600;
+    color: #333;
+=======
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 }
 
 .default-badge {
@@ -447,13 +1272,99 @@
     padding: 3px 8px;
     border-radius: 3px;
     margin-left: 10px;
+<<<<<<< HEAD
     font-weight: 500;
+=======
+<<<<<<< HEAD
+    font-weight: 500;
+=======
+<<<<<<< HEAD
+    font-weight: 500;
+=======
+<<<<<<< HEAD
+    font-weight: 500;
+=======
+<<<<<<< HEAD
+    font-weight: 500;
+=======
+<<<<<<< HEAD
+    font-weight: 500;
+=======
+<<<<<<< HEAD
+    font-weight: 500;
+=======
+<<<<<<< HEAD
+    font-weight: 500;
+=======
+<<<<<<< HEAD
+    font-weight: 500;
+=======
+<<<<<<< HEAD
+    font-weight: 500;
+=======
+<<<<<<< HEAD
+    font-weight: 500;
+=======
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 }
 
 .address-item p {
     margin: 5px 0;
     color: #666;
+<<<<<<< HEAD
     line-height: 1.5;
+=======
+<<<<<<< HEAD
+    line-height: 1.5;
+=======
+<<<<<<< HEAD
+    line-height: 1.5;
+=======
+<<<<<<< HEAD
+    line-height: 1.5;
+=======
+<<<<<<< HEAD
+    line-height: 1.5;
+=======
+<<<<<<< HEAD
+    line-height: 1.5;
+=======
+<<<<<<< HEAD
+    line-height: 1.5;
+=======
+<<<<<<< HEAD
+    line-height: 1.5;
+=======
+<<<<<<< HEAD
+    line-height: 1.5;
+=======
+<<<<<<< HEAD
+    line-height: 1.5;
+=======
+<<<<<<< HEAD
+    line-height: 1.5;
+=======
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 }
 
 .address-actions {
@@ -467,6 +1378,37 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
     margin-top: 20px;
     width: 100%;
     max-width: 200px;
@@ -530,6 +1472,41 @@
     font-style: italic;
 }
 
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    margin-top: 10px;
+}
+
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
+>>>>>>> 91ec69d17c4fedc6f3b3b07bbc7e0350db46acd3
+>>>>>>> d5d32549b6b65cbcff7ec433958a7cd7a62f4aa7
+>>>>>>> d4c995d730c57a4bd65a8e7487109b4b1957830e
+>>>>>>> 0f1bb934aab1a1221d1b610a0d9749e20fc0fc18
+>>>>>>> 25eda57640928424dcc762c1d676f5b4164f800f
 /* Settings Tab */
 .settings-section {
     margin-bottom: 40px;
