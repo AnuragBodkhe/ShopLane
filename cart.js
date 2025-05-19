@@ -1,5 +1,6 @@
 console.clear();
 
+<<<<<<< HEAD
 // Using utility functions from utils.js
 // These functions are defined in utils.js:
 // - getCartItems()
@@ -35,12 +36,73 @@ function updateCart(items) {
     } catch (error) {
         console.error('Error updating cart:', error);
         showToast('There was an error updating your cart', 'error');
+=======
+// Function to get cart items from localStorage
+function getCartItems() {
+    try {
+        const cartData = localStorage.getItem('cart');
+        console.log('Raw cart data from localStorage:', cartData);
+        if (cartData) {
+            const cartItems = JSON.parse(cartData);
+            console.log('Parsed cart items:', cartItems);
+            return cartItems;
+        }
+    } catch (error) {
+        console.error('Error getting cart items:', error);
+    }
+    console.log('No cart items found, returning empty array');
+    return [];
+}
+
+// Update cart badge count
+function updateCartBadge() {
+    try {
+        const cart = getCartItems();
+        let count = 0;
+        cart.forEach(item => {
+            count += item.quantity || 1;
+        });
+        const badge = document.getElementById("badge");
+        if (badge) {
+            badge.textContent = count;
+        }
+    } catch (error) {
+        console.error('Error updating cart badge:', error);
+    }
+}
+
+// Function to update cart in localStorage
+function updateCart(items) {
+    try {
+        // Save to localStorage
+        localStorage.setItem('cart', JSON.stringify(items));
+        
+        // Update badge
+        updateCartBadge();
+        
+        // Update total items count
+        const totalItem = document.getElementById("totalItem");
+        if (totalItem) {
+            let totalQuantity = 0;
+            items.forEach(item => {
+                totalQuantity += item.quantity || 1;
+            });
+            totalItem.textContent = `Total Items: ${totalQuantity}`;
+        }
+    } catch (error) {
+        console.error('Error updating cart:', error);
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
     }
 }
 
 // Function to remove item from cart
 function removeFromCart(itemId) {
     let items = getCartItems();
+<<<<<<< HEAD
+=======
+    items = items.filter(item => item.id !== itemId);
+    updateCart(items);
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
     
     // Find the item to be removed for the notification
     const removedItem = items.find(item => item.id === itemId);
@@ -85,6 +147,27 @@ function removeFromCart(itemId) {
         // If the DOM element wasn't found, still update totals
         updateTotalAmount();
     }
+<<<<<<< HEAD
+=======
+    
+    // If cart is empty, show empty cart message
+    if (items.length === 0) {
+        const cartContainer = document.getElementById('cartContainer');
+        if (cartContainer) {
+            cartContainer.innerHTML = `
+                <div class="empty-cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h2>Your Cart is Empty</h2>
+                    <p>Looks like you haven't added anything to your cart yet.</p>
+                    <a href="index.html" class="continue-shopping">Continue Shopping</a>
+                </div>
+            `;
+        }
+    }
+    
+    // Update the total amount
+    updateTotalAmount();
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
 }
 
 // Function to update item quantity
@@ -94,6 +177,7 @@ function updateQuantity(productId, change) {
     const itemIndex = items.findIndex(item => item.id === productId);
     
     if (itemIndex >= 0) {
+<<<<<<< HEAD
         const item = items[itemIndex];
         const currentQty = item.quantity || 1;
         
@@ -119,11 +203,27 @@ function updateQuantity(productId, change) {
                 } else {
                     showToast(`Decreased ${item.name} quantity to ${newQty}`, 'info');
                 }
+=======
+        if (change === 0) {
+            // Remove item completely
+            items.splice(itemIndex, 1);
+        } else {
+            // Update quantity
+            const newQty = (items[itemIndex].quantity || 1) + change;
+            
+            if (newQty <= 0) {
+                // Remove item if quantity would be 0 or less
+                items.splice(itemIndex, 1);
+            } else {
+                // Update quantity
+                items[itemIndex].quantity = newQty;
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
             }
         }
         
         updateCart(items);
         
+<<<<<<< HEAD
         // Update the displayed quantity and total with animation
         const quantityElement = document.querySelector(`[data-item-id="${productId}"] .quantity`);
         if (quantityElement) {
@@ -145,14 +245,32 @@ function updateQuantity(productId, change) {
                 setTimeout(() => {
                     priceElement.classList.remove('flash');
                 }, 500);
+=======
+        // Update the displayed quantity and total
+        const quantityElement = document.querySelector(`[data-item-id="${productId}"] .quantity`);
+        if (quantityElement && itemIndex >= 0 && items[itemIndex]) {
+            quantityElement.textContent = items[itemIndex].quantity;
+            
+            // Update the item total
+            const priceElement = document.querySelector(`[data-item-id="${productId}"] .item-total`);
+            if (priceElement) {
+                priceElement.textContent = `Total: ₹${items[itemIndex].price * items[itemIndex].quantity}`;
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
             }
             
             // Update the overall total
             updateTotalAmount();
+<<<<<<< HEAD
         }
     } else {
         console.error(`Product with ID ${productId} not found in cart`);
         showToast('Error updating quantity', 'error');
+=======
+        } else {
+            // If the item was removed, refresh the page
+            location.reload();
+        }
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
     }
 }
 
@@ -169,6 +287,7 @@ function updateTotalAmount() {
     const shippingElement = document.querySelector('.summary-item .shipping-value');
     const totalElement = document.querySelector('.summary-item.total .total-value');
     
+<<<<<<< HEAD
     // Helper function to animate value changes
     function animateValueChange(element, newValue) {
         if (!element) return;
@@ -209,6 +328,18 @@ function updateTotalAmount() {
             checkoutBtn.disabled = false;
             checkoutBtn.classList.remove('disabled');
         }
+=======
+    if (subtotalElement) {
+        subtotalElement.textContent = `₹${totalAmount}`;
+    }
+    
+    if (shippingElement) {
+        shippingElement.textContent = totalAmount > 999 ? 'FREE' : '₹99';
+    }
+    
+    if (totalElement) {
+        totalElement.textContent = `₹${totalAmount > 999 ? totalAmount : totalAmount + 99}`;
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
     }
 }
 
@@ -338,7 +469,15 @@ document.addEventListener('DOMContentLoaded', function() {
         const checkoutBtn = document.getElementById('checkout-btn');
         if (checkoutBtn) {
             checkoutBtn.addEventListener('click', function() {
+<<<<<<< HEAD
                 processCheckout(cartItems, totalAmount);
+=======
+<<<<<<< HEAD
+                processCheckout(cartItems, totalAmount);
+=======
+                alert('Thank you for your order! This is a demo, so no actual purchase will be made.');
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
             });
         }
     }
@@ -713,6 +852,7 @@ styles.textContent = `
 `;
 
 document.head.appendChild(styles);
+<<<<<<< HEAD
 
 // Function to process checkout and place order
 function processCheckout(items, totalAmount) {
@@ -749,3 +889,8 @@ function simulateSendEmail(email, orderDetails) {
     // In a real application, this would make an API call to your backend
     // which would then send an actual email to the customer
 }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
