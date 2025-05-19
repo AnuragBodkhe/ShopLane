@@ -29,6 +29,16 @@
             <div id="container">
                 <!-- SHOP NAME -->
                 <div id="shopName"><a href="index.html"> <b>SHOP</b>LANE </a></div>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
                 <!-- COLLCETIONS ON WEBSITE -->
                 <div id="collection">
                     <div id="clothing"><a href="clothing.html"> CLOTHING </a></div>
@@ -51,6 +61,50 @@
                         <a href="profile.html" class="profile-link" aria-label="User Profile"> 
                             <i class="fas fa-user-circle userIcon"></i> 
                         </a>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+                    <!-- COLLCETIONS ON WEBSITE -->
+                    <div id="collection">
+                        <div id="clothing"><a href="clothing.html"> CLOTHING </a></div>
+                        <div id="accessories"><a href="accessories.html"> ACCESSORIES </a></div>
+                        <div id="about"><a href="about.html"> ABOUT </a></div>
+                    </div>
+                    <!-- SEARCH SECTION -->
+                    <div id="search">
+                        <i class="fas fa-search search"></i>
+                        <input type="text" id="input" name="searchBox" placeholder="Search for Clothing and Accessories">
+                    </div>
+                    <!-- USER SECTION (CART AND USER ICON) -->
+                    <div id="user">
+                        <a href="cart.html"> <i class="fas fa-shopping-cart addedToCart"><div id="badge"> 0 </div></i></a>
+                        <div class="profile-container">
+<<<<<<< HEAD
+                            <a href="profile.html" class="profile-link"> <i class="fas fa-user-circle userIcon"></i> </a>
+=======
+<<<<<<< HEAD
+                            <a href="profile.html" class="profile-link"> <i class="fas fa-user-circle userIcon"></i> </a>
+=======
+                            <a href="#" onclick="toggleDropdown(event)"> <i class="fas fa-user-circle userIcon"></i> </a>
+                            <div class="profile-dropdown" id="profileDropdown">
+                                <a href="profile.html">My Profile</a>
+                                <a href="orders.html">My Orders</a>
+                                <a href="wishlist.html">Wishlist</a>
+                                <a href="settings.html">Settings</a>
+                                <a href="login.html">Login/Signup</a>
+                                <a href="#" onclick="localStorage.removeItem('user'); window.location.href='login.html';">Logout</a>
+                            </div>
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+                        </div>
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
                     </div>
                 </div>
             </div>
@@ -58,19 +112,61 @@
     </header>
 
 <script>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
     // Check if user is logged in on page load and update cart badge
     document.addEventListener('DOMContentLoaded', function() {
         // Update cart badge count
         updateCartBadge();
         
         // Check login status to handle profile link behavior
+<<<<<<< HEAD
         var userData = getUserData();
+=======
+<<<<<<< HEAD
+        var userData = getUserData();
+=======
+<<<<<<< HEAD
+        var userData = getUserData();
+=======
+<<<<<<< HEAD
+        var userData = getUserData();
+=======
+        var userData = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null;
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
         var profileLink = document.querySelector('.profile-link');
         
         if (!userData) {
             // If user is not logged in, redirect to login page instead of profile
             profileLink.href = 'login.html';
         }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
         
         // Add search functionality
         const searchInput = document.getElementById('input');
@@ -97,6 +193,96 @@
             }
         }
     });
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+=======
+    });
+    
+    // Function to update cart badge
+    function updateCartBadge() {
+        // Get cart data from localStorage
+        try {
+            // First try to get the cart count directly
+            let count = parseInt(localStorage.getItem('cartCount')) || 0;
+            
+            // If count is 0, try to calculate from cart items as a fallback
+            if (count === 0) {
+                const cartData = localStorage.getItem('cart');
+                if (cartData) {
+                    const cart = JSON.parse(cartData);
+                    cart.forEach(item => {
+                        count += item.quantity;
+                    });
+                }
+            }
+            
+            // Update the badge
+            document.getElementById('badge').textContent = count;
+            
+            // Save the count back to localStorage
+            localStorage.setItem('cartCount', count);
+        } catch (error) {
+            console.error('Error updating cart badge:', error);
+            document.getElementById('badge').textContent = '0';
+        }
+    }
+    
+    // Listen for storage events to update cart badge when cart changes
+    window.addEventListener('storage', function(e) {
+        if (e.key === 'cart' || e.key === 'cartCount') {
+            updateCartBadge();
+        }
+    });
+<<<<<<< HEAD
+=======
+=======
+    // Simple function to toggle the profile dropdown
+    function toggleDropdown(e) {
+        e.preventDefault(); // Prevent the default link behavior
+        e.stopPropagation(); // Prevent the click from bubbling up
+        
+        var dropdown = document.getElementById('profileDropdown');
+        if (dropdown.style.display === 'block') {
+            dropdown.style.display = 'none';
+        } else {
+            dropdown.style.display = 'block';
+        }
+    }
+    
+    // Close dropdown when clicking elsewhere on the page
+    document.addEventListener('click', function(event) {
+        var dropdown = document.getElementById('profileDropdown');
+        var container = document.querySelector('.profile-container');
+        
+        if (!container.contains(event.target) && dropdown.style.display === 'block') {
+            dropdown.style.display = 'none';
+        }
+    });
+    
+    // Add click handlers for dropdown links
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all links in the dropdown except the logout button
+        var dropdownLinks = document.querySelectorAll('#profileDropdown a:not([onclick])');
+        
+        // Add click handler to each link
+        dropdownLinks.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                // Don't prevent default here - let the link navigate normally
+                // Just hide the dropdown
+                document.getElementById('profileDropdown').style.display = 'none';
+            });
+        });
+    });
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
+>>>>>>> 19dc6d03cb4d2d84c82f95047f1b47ba0e8a2c5c
+>>>>>>> 9f5e01754ab671376056942a77508634f2d8cad1
+>>>>>>> 07949f5f99674e295811976803284542e8e7c7d6
+>>>>>>> d1e5125cf2f27f0b7e524284990cf2b86ca357bc
 </script>
 </body>
 </html>
