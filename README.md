@@ -109,6 +109,11 @@ http://localhost/Online-Fashion-Store
 
 ## 📸 Screenshots
 
+### Landing Page
+![Landing Page Screenshot 1](img/Screenshot%202025-05-20%20004211.png)
+![Landing Page Screenshot 2](img/Screenshot%202025-05-20%20004232.png)
+
+### Product Pages
 ![Screenshot 2025-05-18 171606](img/Screenshot%202025-05-18%20171606.png)
 ![Screenshot 2025-05-18 171616](img/Screenshot%202025-05-18%20171616.png)
 ![Screenshot 2025-05-18 171628](img/Screenshot%202025-05-18%20171628.png)
