@@ -24,6 +24,7 @@
                     <div id="collection">
                         <div id="clothing"><a href="clothing.html"> CLOTHING </a></div>
                         <div id="accessories"><a href="accessories.html"> ACCESSORIES </a></div>
+                        <div id="about"><a href="about.html"> ABOUT </a></div>
                     </div>
                     <!-- SEARCH SECTION -->
                     <div id="search">
@@ -33,12 +34,61 @@
                     <!-- USER SECTION (CART AND USER ICON) -->
                     <div id="user">
                         <a href="cart.html"> <i class="fas fa-shopping-cart addedToCart"><div id="badge"> 0 </div></i></a>
-                        <a href="#"> <i class="fas fa-user-circle userIcon"></i> </a>
+                        <div class="profile-container">
+                            <a href="#" onclick="toggleDropdown(event)"> <i class="fas fa-user-circle userIcon"></i> </a>
+                            <div class="profile-dropdown" id="profileDropdown">
+                                <a href="profile.html">My Profile</a>
+                                <a href="orders.html">My Orders</a>
+                                <a href="wishlist.html">Wishlist</a>
+                                <a href="settings.html">Settings</a>
+                                <a href="login.html">Login/Signup</a>
+                                <a href="#" onclick="localStorage.removeItem('user'); window.location.href='login.html';">Logout</a>
+                            </div>
+                        </div>
                     </div>
             </div>
 
         </section>
     </header>
 
+<script>
+    // Simple function to toggle the profile dropdown
+    function toggleDropdown(e) {
+        e.preventDefault(); // Prevent the default link behavior
+        e.stopPropagation(); // Prevent the click from bubbling up
+        
+        var dropdown = document.getElementById('profileDropdown');
+        if (dropdown.style.display === 'block') {
+            dropdown.style.display = 'none';
+        } else {
+            dropdown.style.display = 'block';
+        }
+    }
+    
+    // Close dropdown when clicking elsewhere on the page
+    document.addEventListener('click', function(event) {
+        var dropdown = document.getElementById('profileDropdown');
+        var container = document.querySelector('.profile-container');
+        
+        if (!container.contains(event.target) && dropdown.style.display === 'block') {
+            dropdown.style.display = 'none';
+        }
+    });
+    
+    // Add click handlers for dropdown links
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all links in the dropdown except the logout button
+        var dropdownLinks = document.querySelectorAll('#profileDropdown a:not([onclick])');
+        
+        // Add click handler to each link
+        dropdownLinks.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                // Don't prevent default here - let the link navigate normally
+                // Just hide the dropdown
+                document.getElementById('profileDropdown').style.display = 'none';
+            });
+        });
+    });
+</script>
 </body>
 </html>
