@@ -1,23 +1,6 @@
 console.clear();
 
-// Function to get cart items from localStorage
-function getCartItems() {
-    try {
-        const cartData = localStorage.getItem('cart');
-        console.log('Raw cart data from localStorage:', cartData);
-        if (cartData) {
-            const cartItems = JSON.parse(cartData);
-            console.log('Parsed cart items:', cartItems);
-            return cartItems;
-        }
-    } catch (error) {
-        console.error('Error getting cart items:', error);
-    }
-    console.log('No cart items found, returning empty array');
-    return [];
-}
-
-// Update cart badge count
+// Update cart badge if exists
 function updateCartBadge() {
     try {
         const cart = getCartItems();
@@ -32,6 +15,19 @@ function updateCartBadge() {
     } catch (error) {
         console.error('Error updating cart badge:', error);
     }
+}
+
+// Function to get cart items from localStorage
+function getCartItems() {
+    try {
+        const cartData = localStorage.getItem('cart');
+        if (cartData) {
+            return JSON.parse(cartData);
+        }
+    } catch (error) {
+        console.error('Error getting cart items:', error);
+    }
+    return [];
 }
 
 // Function to update cart in localStorage
@@ -71,9 +67,9 @@ function removeFromCart(itemId) {
     
     // If cart is empty, show empty cart message
     if (items.length === 0) {
-        const cartContainer = document.getElementById('cartContainer');
-        if (cartContainer) {
-            cartContainer.innerHTML = `
+        const cartContent = document.querySelector('.cart-content');
+        if (cartContent) {
+            cartContent.innerHTML = `
                 <div class="empty-cart">
                     <i class="fas fa-shopping-cart"></i>
                     <h2>Your Cart is Empty</h2>
@@ -90,7 +86,6 @@ function removeFromCart(itemId) {
 
 // Function to update item quantity
 function updateQuantity(productId, change) {
-    console.log(`Updating quantity for product ${productId} by ${change}`);
     let items = getCartItems();
     const itemIndex = items.findIndex(item => item.id === productId);
     
@@ -187,20 +182,19 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // If cart is empty
     if (!cartItems || cartItems.length === 0) {
-        const emptyCartMessage = document.createElement('div');
-        emptyCartMessage.className = 'empty-cart';
-        emptyCartMessage.innerHTML = `
-            <i class="fas fa-shopping-cart"></i>
-            <h2>Your Cart is Empty</h2>
-            <p>Looks like you haven't added anything to your cart yet.</p>
-            <a href="index.html" class="continue-shopping">Continue Shopping</a>
+        const cartWrapper = document.createElement('div');
+        cartWrapper.className = 'cart-wrapper';
+        cartWrapper.innerHTML = `
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <h2>Your Cart is Empty</h2>
+                <p>Looks like you haven't added anything to your cart yet.</p>
+                <a href="index.html" class="continue-shopping">Continue Shopping</a>
+            </div>
         `;
         
-        cartContainer.innerHTML = '';
-        cartContainer.appendChild(emptyCartMessage);
+        cartContainer.appendChild(cartWrapper);
     } else {
-        console.log('Rendering cart with items:', cartItems);
-        
         // Create cart wrapper
         const cartWrapper = document.createElement('div');
         cartWrapper.className = 'cart-wrapper';
@@ -276,7 +270,6 @@ document.addEventListener('DOMContentLoaded', function() {
         `;
         
         // Add cart sections to page
-        cartContainer.innerHTML = '';
         cartWrapper.appendChild(cartContent);
         cartWrapper.appendChild(cartSummary);
         cartContainer.appendChild(cartWrapper);

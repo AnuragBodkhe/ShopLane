@@ -24,6 +24,7 @@
                     <div id="collection">
                         <div id="clothing"><a href="clothing.html"> CLOTHING </a></div>
                         <div id="accessories"><a href="accessories.html"> ACCESSORIES </a></div>
+                        <div id="about"><a href="about.html"> ABOUT </a></div>
                     </div>
                     <!-- SEARCH SECTION -->
                     <div id="search">
@@ -33,12 +34,66 @@
                     <!-- USER SECTION (CART AND USER ICON) -->
                     <div id="user">
                         <a href="cart.html"> <i class="fas fa-shopping-cart addedToCart"><div id="badge"> 0 </div></i></a>
-                        <a href="#"> <i class="fas fa-user-circle userIcon"></i> </a>
+                        <div class="profile-container">
+                            <a href="profile.html" class="profile-link"> <i class="fas fa-user-circle userIcon"></i> </a>
+                        </div>
                     </div>
             </div>
 
         </section>
     </header>
 
+<script>
+    // Check if user is logged in on page load and update cart badge
+    document.addEventListener('DOMContentLoaded', function() {
+        // Update cart badge count
+        updateCartBadge();
+        
+        // Check login status to handle profile link behavior
+        var userData = localStorage.getItem('user') ? JSON.parse(localStorage.getItem('user')) : null;
+        var profileLink = document.querySelector('.profile-link');
+        
+        if (!userData) {
+            // If user is not logged in, redirect to login page instead of profile
+            profileLink.href = 'login.html';
+        }
+    });
+    
+    // Function to update cart badge
+    function updateCartBadge() {
+        // Get cart data from localStorage
+        try {
+            // First try to get the cart count directly
+            let count = parseInt(localStorage.getItem('cartCount')) || 0;
+            
+            // If count is 0, try to calculate from cart items as a fallback
+            if (count === 0) {
+                const cartData = localStorage.getItem('cart');
+                if (cartData) {
+                    const cart = JSON.parse(cartData);
+                    cart.forEach(item => {
+                        count += item.quantity;
+                    });
+                }
+            }
+            
+            // Update the badge
+            document.getElementById('badge').textContent = count;
+            
+            // Save the count back to localStorage
+            localStorage.setItem('cartCount', count);
+        } catch (error) {
+            console.error('Error updating cart badge:', error);
+            document.getElementById('badge').textContent = '0';
+        }
+    }
+    
+    // Listen for storage events to update cart badge when cart changes
+    window.addEventListener('storage', function(e) {
+        if (e.key === 'cart' || e.key === 'cartCount') {
+            updateCartBadge();
+        }
+    });
+</script>
 </body>
 </html>
