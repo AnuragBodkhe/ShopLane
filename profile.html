@@ -28,6 +28,7 @@
     <!-- Profile Section -->
     <section class="profile-section">
         <div class="container">
+<<<<<<< HEAD
             <div class="profile-container">
                 <div class="profile-menu">
                     <ul>
@@ -37,11 +38,41 @@
                         <li data-tab="addresses"><i class="fas fa-map-marker-alt"></i> Addresses</li>
                         <li data-tab="settings"><i class="fas fa-cog"></i> Settings</li>
                     </ul>
+=======
+            <h1 class="section-title">My Profile</h1>
+            
+            <div class="profile-container">
+                <div class="profile-sidebar">
+                    <div class="profile-image">
+                        <img src="https://via.placeholder.com/150" alt="Profile Image" id="profile-img">
+                        <div class="edit-profile-image">
+                            <label for="profile-image-upload">
+                                <i class="fas fa-camera"></i>
+                            </label>
+                            <input type="file" id="profile-image-upload" accept="image/*">
+                        </div>
+                    </div>
+                    <h3 id="profile-name">John Doe</h3>
+                    <p id="profile-email">johndoe@example.com</p>
+                    <div class="profile-menu">
+                        <ul>
+                            <li class="active" data-tab="personal-info"><i class="fas fa-user"></i> Personal Information</li>
+                            <li data-tab="my-orders"><i class="fas fa-shopping-bag"></i> My Orders</li>
+                            <li data-tab="wishlist"><i class="fas fa-heart"></i> Wishlist</li>
+                            <li data-tab="addresses"><i class="fas fa-map-marker-alt"></i> Addresses</li>
+                            <li data-tab="settings"><i class="fas fa-cog"></i> Settings</li>
+                        </ul>
+                    </div>
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                 </div>
                 
                 <div class="profile-content">
                     <!-- Personal Information Tab -->
+<<<<<<< HEAD
                     <div class="tab-content" id="personal-info">
+=======
+                    <div class="tab-content active" id="personal-info">
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                         <h2>Personal Information</h2>
                         <form id="personal-info-form">
                             <div class="form-group">
@@ -86,7 +117,11 @@
                                 <div class="order-header">
                                     <div class="order-id">Order #12345</div>
                                     <div class="order-date">May 15, 2025</div>
+<<<<<<< HEAD
                                     <div class="order-status delivered">Delivered</div>
+=======
+                                    <div class="order-status">Delivered</div>
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                                 </div>
                                 <div class="order-products">
                                     <div class="order-product">
@@ -108,7 +143,11 @@
                                 <div class="order-header">
                                     <div class="order-id">Order #12346</div>
                                     <div class="order-date">May 10, 2025</div>
+<<<<<<< HEAD
                                     <div class="order-status processing">Processing</div>
+=======
+                                    <div class="order-status">Processing</div>
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                                 </div>
                                 <div class="order-products">
                                     <div class="order-product">
@@ -129,7 +168,11 @@
                     </div>
                     
                     <!-- Wishlist Tab -->
+<<<<<<< HEAD
                     <div class="tab-content active" id="wishlist">
+=======
+                    <div class="tab-content" id="wishlist">
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                         <h2>My Wishlist</h2>
                         <div class="wishlist-items">
                             <div class="wishlist-item">
@@ -138,19 +181,33 @@
                                     <h4>Smart Watch</h4>
                                     <p>₹2499</p>
                                     <div class="wishlist-actions">
+<<<<<<< HEAD
                                         <button class="btn-primary add-to-cart" data-id="1" data-name="Smart Watch" data-price="2499">Add to Cart</button>
                                         <button class="btn-remove remove-from-wishlist" data-id="1"><i class="fas fa-trash"></i></button>
                                     </div>
                                 </div>
                             </div>
+=======
+                                        <button class="btn-primary">Add to Cart</button>
+                                        <button class="btn-remove"><i class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                             <div class="wishlist-item">
                                 <img src="https://via.placeholder.com/100" alt="Product">
                                 <div class="wishlist-item-details">
                                     <h4>Running Shoes</h4>
                                     <p>₹1899</p>
                                     <div class="wishlist-actions">
+<<<<<<< HEAD
                                         <button class="btn-primary add-to-cart" data-id="2" data-name="Running Shoes" data-price="1899">Add to Cart</button>
                                         <button class="btn-remove remove-from-wishlist" data-id="2"><i class="fas fa-trash"></i></button>
+=======
+                                        <button class="btn-primary">Add to Cart</button>
+                                        <button class="btn-remove"><i class="fas fa-trash"></i></button>
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                                     </div>
                                 </div>
                             </div>
@@ -160,6 +217,7 @@
                     <!-- Addresses Tab -->
                     <div class="tab-content" id="addresses">
                         <h2>My Addresses</h2>
+<<<<<<< HEAD
                         <div class="addresses-list" id="addresses-container">
                             <!-- Address items will be loaded here dynamically -->
                             <p class="empty-message">You don't have any saved addresses yet.</p>
@@ -215,12 +273,52 @@
                         <button class="btn-primary add-address-btn" id="show-address-form">
                             <i class="fas fa-plus"></i> Add New Address
                         </button>
+=======
+                        <div class="addresses-list">
+                            <div class="address-item">
+                                <div class="address-header">
+                                    <h4>Home</h4>
+                                    <span class="default-badge">Default</span>
+                                </div>
+                                <p>John Doe</p>
+                                <p>123 Main Street, Apartment 4B</p>
+                                <p>Mumbai, Maharashtra - 400001</p>
+                                <p>Phone: +91 9876543210</p>
+                                <div class="address-actions">
+                                    <button class="btn-secondary">Edit</button>
+                                    <button class="btn-remove">Delete</button>
+                                </div>
+                            </div>
+                            
+                            <div class="address-item">
+                                <div class="address-header">
+                                    <h4>Office</h4>
+                                </div>
+                                <p>John Doe</p>
+                                <p>456 Business Park, Building C</p>
+                                <p>Mumbai, Maharashtra - 400051</p>
+                                <p>Phone: +91 9876543210</p>
+                                <div class="address-actions">
+                                    <button class="btn-secondary">Edit</button>
+                                    <button class="btn-remove">Delete</button>
+                                    <button class="btn-secondary">Set as Default</button>
+                                </div>
+                            </div>
+                            
+                            <button class="btn-primary add-address-btn">
+                                <i class="fas fa-plus"></i> Add New Address
+                            </button>
+                        </div>
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                     </div>
                     
                     <!-- Settings Tab -->
                     <div class="tab-content" id="settings">
                         <h2>Account Settings</h2>
+<<<<<<< HEAD
                         
+=======
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                         <div class="settings-section">
                             <h3>Password</h3>
                             <form id="password-form">
@@ -241,30 +339,54 @@
                         </div>
                         
                         <div class="settings-section">
+<<<<<<< HEAD
                             <h3>Notification Preferences</h3>
                             <div class="notification-settings">
                                 <div class="notification-option">
                                     <label>
                                         <input type="checkbox" id="email-orders" checked> Email notifications for orders
+=======
+                            <h3>Notifications</h3>
+                            <div class="notification-settings">
+                                <div class="notification-option">
+                                    <label>
+                                        <input type="checkbox" checked> Email notifications for orders
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                                     </label>
                                 </div>
                                 <div class="notification-option">
                                     <label>
+<<<<<<< HEAD
                                         <input type="checkbox" id="email-promos" checked> Email notifications for promotions
+=======
+                                        <input type="checkbox" checked> Email notifications for promotions
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                                     </label>
                                 </div>
                                 <div class="notification-option">
                                     <label>
+<<<<<<< HEAD
                                         <input type="checkbox" id="sms-notifications" checked> SMS notifications
                                     </label>
                                 </div>
                             </div>
                             <button class="btn-primary" id="save-preferences">Save Preferences</button>
+=======
+                                        <input type="checkbox" checked> SMS notifications
+                                    </label>
+                                </div>
+                            </div>
+                            <button class="btn-primary">Save Preferences</button>
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                         </div>
                         
                         <div class="settings-section danger-zone">
                             <h3>Danger Zone</h3>
+<<<<<<< HEAD
                             <button class="btn-danger" id="delete-account">Delete Account</button>
+=======
+                            <button class="btn-danger">Delete Account</button>
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                         </div>
                     </div>
                 </div>
@@ -284,17 +406,27 @@
             document.getElementById(elementId).innerHTML = req.responseText;
         }
 
+<<<<<<< HEAD
         // Load header and footer
         loadSection('header', 'header.html');
         loadSection('footer', 'footer.html');
     </script>
 
+=======
+        // Load all sections
+        loadSection('header', 'header.html');
+        loadSection('footer', 'footer.html');
+    </script>
+    
+    <!-- Profile JS -->
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             // Tab switching functionality
             const tabLinks = document.querySelectorAll('.profile-menu li');
             const tabContents = document.querySelectorAll('.tab-content');
             
+<<<<<<< HEAD
             tabLinks.forEach(function(tabLink) {
                 tabLink.addEventListener('click', function() {
                     // Remove active class from all tabs
@@ -306,6 +438,13 @@
                     tabContents.forEach(function(content) {
                         content.classList.remove('active');
                     });
+=======
+            tabLinks.forEach(tab => {
+                tab.addEventListener('click', function() {
+                    // Remove active class from all tabs
+                    tabLinks.forEach(t => t.classList.remove('active'));
+                    tabContents.forEach(c => c.classList.remove('active'));
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                     
                     // Add active class to clicked tab
                     this.classList.add('active');
@@ -316,6 +455,7 @@
                 });
             });
             
+<<<<<<< HEAD
             // Load wishlist items from localStorage
             function loadWishlist() {
                 const wishlistContainer = document.querySelector('#wishlist .wishlist-items');
@@ -694,15 +834,45 @@
             });
             
             // Load user data if available
+=======
+            // Profile image upload functionality
+            const profileImgInput = document.getElementById('profile-image-upload');
+            const profileImg = document.getElementById('profile-img');
+            
+            profileImgInput.addEventListener('change', function(e) {
+                if (e.target.files && e.target.files[0]) {
+                    const reader = new FileReader();
+                    
+                    reader.onload = function(e) {
+                        profileImg.src = e.target.result;
+                        
+                        // Store in localStorage for persistence
+                        localStorage.setItem('profileImage', e.target.result);
+                    }
+                    
+                    reader.readAsDataURL(e.target.files[0]);
+                }
+            });
+            
+            // Load profile data from localStorage if available
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
             if (localStorage.getItem('user')) {
                 try {
                     const userData = JSON.parse(localStorage.getItem('user'));
                     
                     if (userData.name) {
+<<<<<<< HEAD
+=======
+                        document.getElementById('profile-name').textContent = userData.name;
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                         document.getElementById('full-name').value = userData.name;
                     }
                     
                     if (userData.email) {
+<<<<<<< HEAD
+=======
+                        document.getElementById('profile-email').textContent = userData.email;
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
                         document.getElementById('email').value = userData.email;
                     }
                     
@@ -722,6 +892,7 @@
                 }
             }
             
+<<<<<<< HEAD
             // Load notification preferences if available
             if (localStorage.getItem('notificationPreferences')) {
                 try {
@@ -734,6 +905,37 @@
                     console.error('Error loading notification preferences:', error);
                 }
             }
+=======
+            // Load profile image if available
+            if (localStorage.getItem('profileImage')) {
+                profileImg.src = localStorage.getItem('profileImage');
+            }
+            
+            // Save personal info form
+            const personalInfoForm = document.getElementById('personal-info-form');
+            
+            personalInfoForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const userData = {
+                    name: document.getElementById('full-name').value,
+                    email: document.getElementById('email').value,
+                    phone: document.getElementById('phone').value,
+                    dob: document.getElementById('dob').value,
+                    gender: document.querySelector('input[name="gender"]:checked').value
+                };
+                
+                // Update profile display
+                document.getElementById('profile-name').textContent = userData.name;
+                document.getElementById('profile-email').textContent = userData.email;
+                
+                // Save to localStorage
+                localStorage.setItem('user', JSON.stringify(userData));
+                
+                // Show success message
+                alert('Profile information updated successfully!');
+            });
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
         });
     </script>
 </body>
