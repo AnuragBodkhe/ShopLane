@@ -285,7 +285,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const checkoutBtn = document.getElementById('checkout-btn');
         if (checkoutBtn) {
             checkoutBtn.addEventListener('click', function() {
-                processCheckout(cartItems, totalAmount);
+                alert('Thank you for your order! This is a demo, so no actual purchase will be made.');
             });
         }
     }
@@ -660,39 +660,3 @@ styles.textContent = `
 `;
 
 document.head.appendChild(styles);
-
-// Function to process checkout and place order
-function processCheckout(items, totalAmount) {
-    // Check if user is logged in
-    const user = JSON.parse(localStorage.getItem('user'));
-    if (!user) {
-        alert('Please login to continue with checkout.');
-        window.location.href = 'login.html?redirect=cart.html';
-        return;
-    }
-    
-    // Save order details to localStorage for order confirmation page
-    const orderDetails = {
-        items: items,
-        subtotal: totalAmount,
-        shipping: totalAmount > 999 ? 'FREE' : '₹99',
-        total: totalAmount > 999 ? totalAmount : totalAmount + 99,
-        orderDate: new Date().toISOString(),
-        user: user
-    };
-    
-    localStorage.setItem('lastOrder', JSON.stringify(orderDetails));
-    
-    // Simulate sending order confirmation email
-    simulateSendEmail(user.email, orderDetails);
-    
-    // Redirect to order confirmation page
-    window.location.href = 'orderConfirmation.html';
-}
-
-// Function to simulate sending an order confirmation email
-function simulateSendEmail(email, orderDetails) {
-    console.log(`Simulating sending email to ${email} with order details:`, orderDetails);
-    // In a real application, this would make an API call to your backend
-    // which would then send an actual email to the customer
-}
