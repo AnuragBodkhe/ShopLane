@@ -285,7 +285,11 @@ document.addEventListener('DOMContentLoaded', function() {
         const checkoutBtn = document.getElementById('checkout-btn');
         if (checkoutBtn) {
             checkoutBtn.addEventListener('click', function() {
+<<<<<<< HEAD
                 processCheckout(cartItems, totalAmount);
+=======
+                alert('Thank you for your order! This is a demo, so no actual purchase will be made.');
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
             });
         }
     }
@@ -660,6 +664,7 @@ styles.textContent = `
 `;
 
 document.head.appendChild(styles);
+<<<<<<< HEAD
 
 // Function to process checkout and place order
 function processCheckout(items, totalAmount) {
@@ -696,3 +701,5 @@ function simulateSendEmail(email, orderDetails) {
     // In a real application, this would make an API call to your backend
     // which would then send an actual email to the customer
 }
+=======
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322

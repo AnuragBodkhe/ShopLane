@@ -35,7 +35,23 @@
                     <div id="user">
                         <a href="cart.html"> <i class="fas fa-shopping-cart addedToCart"><div id="badge"> 0 </div></i></a>
                         <div class="profile-container">
+<<<<<<< HEAD
                             <a href="profile.html" class="profile-link"> <i class="fas fa-user-circle userIcon"></i> </a>
+=======
+<<<<<<< HEAD
+                            <a href="profile.html" class="profile-link"> <i class="fas fa-user-circle userIcon"></i> </a>
+=======
+                            <a href="#" onclick="toggleDropdown(event)"> <i class="fas fa-user-circle userIcon"></i> </a>
+                            <div class="profile-dropdown" id="profileDropdown">
+                                <a href="profile.html">My Profile</a>
+                                <a href="orders.html">My Orders</a>
+                                <a href="wishlist.html">Wishlist</a>
+                                <a href="settings.html">Settings</a>
+                                <a href="login.html">Login/Signup</a>
+                                <a href="#" onclick="localStorage.removeItem('user'); window.location.href='login.html';">Logout</a>
+                            </div>
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
                         </div>
                     </div>
             </div>
@@ -44,6 +60,10 @@
     </header>
 
 <script>
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
     // Check if user is logged in on page load and update cart badge
     document.addEventListener('DOMContentLoaded', function() {
         // Update cart badge count
@@ -94,6 +114,48 @@
             updateCartBadge();
         }
     });
+<<<<<<< HEAD
+=======
+=======
+    // Simple function to toggle the profile dropdown
+    function toggleDropdown(e) {
+        e.preventDefault(); // Prevent the default link behavior
+        e.stopPropagation(); // Prevent the click from bubbling up
+        
+        var dropdown = document.getElementById('profileDropdown');
+        if (dropdown.style.display === 'block') {
+            dropdown.style.display = 'none';
+        } else {
+            dropdown.style.display = 'block';
+        }
+    }
+    
+    // Close dropdown when clicking elsewhere on the page
+    document.addEventListener('click', function(event) {
+        var dropdown = document.getElementById('profileDropdown');
+        var container = document.querySelector('.profile-container');
+        
+        if (!container.contains(event.target) && dropdown.style.display === 'block') {
+            dropdown.style.display = 'none';
+        }
+    });
+    
+    // Add click handlers for dropdown links
+    document.addEventListener('DOMContentLoaded', function() {
+        // Get all links in the dropdown except the logout button
+        var dropdownLinks = document.querySelectorAll('#profileDropdown a:not([onclick])');
+        
+        // Add click handler to each link
+        dropdownLinks.forEach(function(link) {
+            link.addEventListener('click', function(e) {
+                // Don't prevent default here - let the link navigate normally
+                // Just hide the dropdown
+                document.getElementById('profileDropdown').style.display = 'none';
+            });
+        });
+    });
+>>>>>>> d45bdf05d9363b81e73c5ede8066810bb2482ba8
+>>>>>>> 974e727d107e748e32e74a1c1f25527fe8701322
 </script>
 </body>
 </html>
